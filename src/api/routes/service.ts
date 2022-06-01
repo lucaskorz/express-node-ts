@@ -14,10 +14,6 @@ export const create = async (travelValidator: TravelValidator) => {
     return travel;
 }
 
-export const getAll = async (travelValidator: TravelValidator) => {
-    const travel = {
-        id: 1,
-        description: travelValidator.description
-    }
-    travels.push(travel);
+export const getAll = async () => {
+    return travels;
 }
