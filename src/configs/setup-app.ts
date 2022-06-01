@@ -14,7 +14,7 @@ const app = createExpressServer({
 })
 
 export const server = async () => {
-    app.use(urlencoded({ limit: '5mb', extended: true }))
+    app.use(urlencoded({ extended: true }))
     return app
 }
 
