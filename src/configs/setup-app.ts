@@ -1,18 +1,21 @@
-import express, { Express } from 'express'
-import { useExpressServer } from 'routing-controllers'
+import { urlencoded } from 'express'
+import { createExpressServer } from 'routing-controllers'
+
+import { TravelController } from '../api/routes/request';
 
 var path = require('path');
 const middlewares = path.resolve(__dirname, '..', 'api', 'middlewares','*.ts')
 const controllers = path.resolve(__dirname, '..', 'api','routes', '*.ts')
 
-export const setupApp = (): Express => {
-    const app = express()
+const app = createExpressServer({
+    defaultErrorHandler: false,
+    controllers: [controllers],
+    middlewares: [TravelController]
+})
 
-    useExpressServer(app, {
-        routePrefix: 'api',
-        controllers: [controllers],
-        middlewares: [middlewares]
-    })
-
-    return app;
+export const server = async () => {
+    app.use(urlencoded({ limit: '5mb', extended: true }))
+    return app
 }
+
+

@@ -1,7 +1,9 @@
 import { IsString, MaxLength } from 'class-validator';
   
-  export class TravelValidator {
-    @IsString()
-    @MaxLength(10)
-    description: string;
-  }
+class TravelValidator {
+  @IsString()
+  @MaxLength(100)
+  description: string;
+}
+
+export { TravelValidator }
