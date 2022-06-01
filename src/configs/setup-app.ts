@@ -3,7 +3,7 @@ import { createExpressServer } from 'routing-controllers'
 
 var path = require('path');
 const middlewares = path.resolve(__dirname, '..', 'api', 'middlewares','*.ts')
-const controllers = path.resolve(__dirname, '..', 'api','routes', '*.ts')
+const controllers = path.resolve(__dirname, '..', 'api', 'routes', '**', '*.ts')
 
 const app = createExpressServer({
     defaultErrorHandler: false,

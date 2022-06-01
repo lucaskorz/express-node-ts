@@ -1,4 +1,4 @@
-import { Travel } from "../../model/travel";
+import { Travel } from "../../../model/travel";
 import { TravelValidator } from "./response";
 
 const travels: Travel[] = []
