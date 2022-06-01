@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2021",                          
+    "experimentalDecorators": true,                
+    "emitDecoratorMetadata": true,                  
+    "module": "commonjs",                              
+    "outDir": "./dist",                                  
+    "forceConsistentCasingInFileNames": true,           
+    "strict": false,                                   
+    "skipLibCheck": true,                
+    "esModuleInterop": true
+  }
+}

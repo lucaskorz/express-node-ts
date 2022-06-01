@@ -1,0 +1,23 @@
+{
+  "name": "api-node-ts-rc-cv",
+  "version": "1.0.0",
+  "description": "API Node Express w/ Routing Controllers & Class Validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaskorz/express-node-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaskorz/express-node-ts/issues"
+  },
+  "homepage": "https://github.com/lucaskorz/express-node-ts#readme",
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  }
+}
